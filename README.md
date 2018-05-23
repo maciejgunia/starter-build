@@ -1,6 +1,7 @@
 # todo
 * change build to webpack
 * add eslint
+* add jest
 
 # starter files
 * babel config
