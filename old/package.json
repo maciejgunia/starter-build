@@ -1,0 +1,25 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "build:sass": "node-sass sass/style.scss style.css --source-map true",
+    "watch:sass": "node-sass -w sass/style.scss style.css --source-map true",
+    "refresh": "browser-sync start --proxy http://example.test --files 'style.css, js/bundle.js' --no-open",
+    "build:babel": "babel js/src --out-file js/bundle.js",
+    "watch:babel": "babel js/src --watch --out-file js/bundle.js",
+    "start": "run-p build:* watch:* refresh"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
