@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: { main: './src/index.js' },
@@ -34,6 +35,7 @@ module.exports = {
       hash: true,
       template: './src/index.html',
       filename: 'index.html'
-    })
+    }),
+    new ManifestPlugin()
   ]
 };

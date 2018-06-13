@@ -29,6 +29,7 @@
     "postcss-loader": "^2.1.5",
     "sass-loader": "^7.0.1",
     "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.4"
+    "webpack-cli": "^2.1.4",
+    "webpack-manifest-plugin": "^2.0.3"
   }
 }
