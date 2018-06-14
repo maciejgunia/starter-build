@@ -1,6 +1,5 @@
 # todo
-* add browsersync / hot reload
-* add eslint
+* add eslint / stylelint
 * add jest
 
 # webpack build
