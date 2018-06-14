@@ -54,8 +54,7 @@ module.exports = {
                 proxy: "http://webpack.test/"
             },
             {
-                injectCss: true,
-                reload: false
+                injectCss: true // not working yet
             }
         )
     ]
