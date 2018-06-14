@@ -3,7 +3,13 @@
 * add eslint
 * add jest
 
-# starter files
+# webpack build
 * babel config
+* scss
+* postcss config
+* hashing
+
+# starter files
+* wp functions to import hashed assets
 * mysql database commands
-* package json npm build scripts
+* responsive mixins

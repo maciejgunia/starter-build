@@ -3,11 +3,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const distFolder = path.resolve(`${__dirname}/wp/wp-content/themes/weback`, 'custom');
 
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: distFolder,
     filename: '[name].[chunkhash].js'
   },
   module: {
@@ -26,9 +27,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin('dist', {} ),
+    new CleanWebpackPlugin(distFolder, {} ),
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css',
+      filename: '[name].[contenthash].css',
     }),
     new HtmlWebpackPlugin({
       inject: false,
