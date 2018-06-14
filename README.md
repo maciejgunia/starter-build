@@ -1,5 +1,6 @@
 # todo
 * add browsersync / hot reload
+* add source maps
 * add eslint
 * add jest
 
