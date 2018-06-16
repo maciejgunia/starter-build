@@ -1,4 +1,3 @@
-## database
 ### creating a database
 * mysql -u root -p
 * CREATE DATABASE example;
@@ -16,7 +15,6 @@ mysql -u root -p example < db/example_180125.sql
 sudo chown -R www-data:www-data /var/www/example.com/public_html
 sudo chmod -R 770 /var/www/example.com/public_html
 
-## bitnami wordpress
-### remove banner
+## bitnami wordpress banner removal
 sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
 sudo  /opt/bitnami/ctlscript.sh restart apache
