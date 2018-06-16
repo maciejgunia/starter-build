@@ -28,5 +28,5 @@ bashsudo chmod -R 770 /var/www/example.com/public_html
 ## bitnami wordpress banner removal
 ```bash
 sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
-sudo  /opt/bitnami/ctlscript.sh restart apache
+sudo /opt/bitnami/ctlscript.sh restart apache
 ```
