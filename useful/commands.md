@@ -12,6 +12,10 @@ mysqldump -u root -p example > db/example_$(date "+%y%m%d").sql
 ### restoring a backup
 mysql -u root -p example < db/example_180125.sql
 
+### adding permissions to folder
+sudo chown -R www-data:www-data /var/www/example.com/public_html
+sudo chmod -R 770 /var/www/example.com/public_html
+
 ## bitnami wordpress
 ### remove banner
 sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
