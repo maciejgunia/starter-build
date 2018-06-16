@@ -22,7 +22,7 @@ mysql -u root -p example < db/example_180125.sql
 ## adding permissions to folder
 ```bash
 sudo chown -R www-data:www-data /var/www/example.com/public_html
-bashsudo chmod -R 770 /var/www/example.com/public_html
+sudo chmod -R 775 /var/www/example.com/public_html
 ```
 
 ## bitnami wordpress banner removal
