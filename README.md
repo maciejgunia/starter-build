@@ -1,4 +1,5 @@
 # todo
+* add babel-polyfill
 * add eslint / stylelint
 * add jest
 
