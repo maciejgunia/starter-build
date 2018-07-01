@@ -1,7 +1,7 @@
 # todo
+* add karma + jasmine + phantomJS testing
 * add babel-polyfill
 * add eslint / stylelint
-* add jest
 
 # webpack build
 * babel config
