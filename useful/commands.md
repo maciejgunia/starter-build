@@ -30,3 +30,8 @@ sudo chmod -R 775 /var/www/example.com/public_html
 sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
 sudo /opt/bitnami/ctlscript.sh restart apache
 ```
+
+## dwnloading _s
+```bash
+curl --data 'underscoresme_name=example&underscoresme_generate_submit=Generate&underscoresme_generate=1&underscoresme_sass=1' http://underscores.me -o example.zip
+```
