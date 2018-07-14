@@ -3,9 +3,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
-const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const distFolder = path.resolve(
-    `${__dirname}/wp/wp-content/themes/weback`,
+    `${__dirname}/wp/wp-content/themes/webpack`,
     "custom"
 );
 
@@ -46,16 +45,6 @@ module.exports = {
             template: "./src/index.html",
             filename: "index.html"
         }),
-        new ManifestPlugin(),
-        new BrowserSyncPlugin(
-            {
-                host: "localhost",
-                port: 3000,
-                proxy: "http://webpack.test/"
-            },
-            {
-                injectCss: true // not working yet
-            }
-        )
+        new ManifestPlugin()
     ]
 };
