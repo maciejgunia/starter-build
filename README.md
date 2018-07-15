@@ -1,4 +1,6 @@
 # todo
+* add TS
+* check if minification works
 * add karma + jasmine + phantomJS testing
 * add babel-polyfill
 * add eslint / stylelint
